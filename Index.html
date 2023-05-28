@@ -1,0 +1,67 @@
+<!-- La letra "e" es convertida para "enter"
+La letra "i" es convertida para "imes"
+La letra "a" es convertida para "ai"
+La letra "o" es convertida para "ober"
+La letra "u" es convertida para "ufat"
+
+Requisitos:
+
+Debe funcionar solo con letras minúsculas
+No deben ser utilizados letras con acentos ni caracteres especiales
+Debe ser posible convertir una palabra para la versión encriptada también devolver una palabra encriptada para su versión original.
+Por ejemplo:
+"gato" => "gaitober"
+gaitober" => "gato"
+
+La página debe tener campos para
+inserción del texto que será encriptado o desencriptado, y el usuario debe poder escoger entre as dos opciones.
+El resultado debe ser mostrado en la pantalla. -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador</title>
+    <link rel="stylesheet" href="Style.css">
+    <script src="Codigo-Java.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;500&display=swap" rel="stylesheet">  
+</head>
+<body>
+    <main class="contenedor">
+            <div class="logo"> <img src="Imagenes/logo2.png"  width="120px" height="120px" alt=""> </div>
+            <h1 class="nombre"> Luis Meza  </h1>
+
+            <Section class="Section-text">
+                <textarea name="Texto" id="text" cols="70" rows="10"  class="Texto-principal" placeholder="Ingrese Texto Aqui" ></textarea>
+            </Section>
+
+            <div class="Muestra-copia"> 
+                <div class="Muñeco-contendor">
+                    <img class="Muñeco" src="Imagenes/Muñeco.png" alt="">
+                </div>
+                <div class="Mensaje-de-copiado">
+                    <h2 class="texto-copia"> Ningun Mensaje fue Encontrado </h2>
+                    <p class="texto-copia-p">Ingresa texto que desees encriptar o desencriptar</p>
+                </div>
+              <!-- <button type="submit" class="Copiar"> Copiar </button> -->
+            </div>
+
+                <div class="Encriptar">
+                    <p class="advertencia"> &#128681; Por favor solo incluir minusculas y sin acentos. </p>
+                   <button type="reset" class="btn-encriptar"> Encriptar </button>
+                   <button type="reset" class="btn-encriptar">  Desencriptar </button>
+                 </div>
+     </main>
+    
+
+   
+
+    
+
+    
+</body>
+</html>

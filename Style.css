@@ -1,0 +1,120 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+.contenedor {
+    width: 100vw;
+    height: 100vh;
+    background-color: #f3f5fc;
+}
+
+.logo {
+    display: inline-block;
+    background: #fef5fc;
+}
+.nombre{
+    display: inline-block;
+    position: absolute;
+    font-family: 'Inter', sans-serif;
+    font-size: 1.5em;
+    margin: 40px 0 0 15px;
+}
+.Section-text{
+    width: 620px;
+    margin: 15px 20px 0 270px;
+    text-align: center;
+
+}
+.Texto-principal {
+    font-family: 'Inter', sans-serif;
+    font-size: 25px;
+    width: 100%;
+    background-color: #f3f5fc;
+    border: #0A3871;
+    outline: none; 
+}
+::placeholder{
+    font-family: 'Inter', sans-serif;
+    font-size: medium;
+
+}
+.Muestra-copia {
+    position: absolute;
+    width: 400px;
+    height: 654px;
+    left: 1000px;
+    top: 30px;
+    /* White */
+    background: white;
+    /* shadow */
+    box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
+    border-radius: 32px;
+}
+.Muñeco-contendor{
+    position: absolute;
+    width: 336px;
+    height: 304px;
+    top: 163px;
+}
+.Muñeco{
+ width: 336;
+ height: 304;
+}
+.Mensaje-de-copiado{
+    position: absolute;
+    width: 336px;
+    height: 58px;
+    top: 486px;
+}
+.texto-copia{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    /* or 29px */
+    text-align: center;
+}
+.texto-copia-p{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 150%;
+    /* or 24px */
+    text-align: center;
+}
+.Copia{
+ background-color: red;
+ color: white;
+}
+
+.btn-encriptar{
+    position: relative;
+    display: inline;
+    top: 120px;
+    height: 67px;
+    width: 328px;
+    border-radius: 24px; 
+    padding: 24px;
+    margin: 15px 15px 0 25px;
+    transition: .4s all;
+    border-radius: 24px;
+}
+.advertencia{
+    position: relative;
+    top: 115px;
+ 
+}
+
+.btn-encriptar:hover{
+    color: white;
+    cursor:pointer;
+    transform: scale(1.1);
+    background: #0A3871;
+
+}
+p{
+    margin: 0 0 0 40px;
+    font-family: 'Inter', sans-serif;
+    font-size: 12px;
+}
