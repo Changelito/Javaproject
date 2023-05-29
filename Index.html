@@ -25,7 +25,6 @@ El resultado debe ser mostrado en la pantalla. -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Encriptador</title>
     <link rel="stylesheet" href="Style.css">
-    <script src="Codigo-Java.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;500&display=swap" rel="stylesheet">  
@@ -36,32 +35,34 @@ El resultado debe ser mostrado en la pantalla. -->
             <h1 class="nombre"> Luis Meza  </h1>
 
             <Section class="Section-text">
-                <textarea name="Texto" id="text" cols="70" rows="10"  class="Texto-principal" placeholder="Ingrese Texto Aqui" ></textarea>
+                <textarea id="texto-area" name="Texto"  cols="70" rows="10"  class="Texto-principal" placeholder="Ingrese Texto Aqui"  ></textarea>
             </Section>
 
             <div class="Muestra-copia"> 
-                <div class="Muñeco-contendor">
-                    <img class="Muñeco" src="Imagenes/Muñeco.png" alt="">
+                <div  class="Muñeco-contendor">
+                    <img class="Muñeco" id="personaje" src="Imagenes/Muñeco.png" alt="">
                 </div>
-                <div class="Mensaje-de-copiado">
-                    <h2 class="texto-copia"> Ningun Mensaje fue Encontrado </h2>
-                    <p class="texto-copia-p">Ingresa texto que desees encriptar o desencriptar</p>
+                <div id="resultado" class="Mensaje-de-copiado">
+                    <h2 class="texto-copia" id="titulo-mensaje"> Ningun Mensaje fue Encontrado </h2>
+                    <p class="texto-copia-p" id="parrafo">Ingresa texto que desees encriptar o desencriptar</p>
                 </div>
               <!-- <button type="submit" class="Copiar"> Copiar </button> -->
             </div>
 
                 <div class="Encriptar">
                     <p class="advertencia"> &#128681; Por favor solo incluir minusculas y sin acentos. </p>
-                   <button type="reset" class="btn-encriptar"> Encriptar </button>
-                   <button type="reset" class="btn-encriptar">  Desencriptar </button>
+
+                   <button onclick="encriptar()" class="btn-encriptar" id="miBoton"  > Encriptar </button>
+
+                   <button type="button" class="btn-encriptar" onclick= desencriptar() >   Desencriptar </button>
                  </div>
+
+    
+
+
      </main>
-    
-
-   
-
-    
-
-    
+        
 </body>
+<script src="Codigo-Java.js"></script>
+
 </html>
