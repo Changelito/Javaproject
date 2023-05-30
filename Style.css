@@ -60,13 +60,13 @@
     position: absolute;
     width: 90%;
     height: 90%;
-    top: 10%;
+    top: 1%;
 }
 .Mensaje-de-copiado{
     position: absolute;
     width: 336px;
     height: 58px;
-    top: 486px;
+    top: 426px;
 }
 /* .Mensaje-de-copiado img {
  width: 80%;
@@ -125,3 +125,34 @@ p{
     font-family: 'Inter', sans-serif;
     font-size: 12px;
 }
+.copiar-btn{
+    position: relative;
+    top: 10px;
+    height: 67px;
+    width: 328px;
+    border-radius: 24px; 
+    padding: 24px;
+    margin: 15px 15px 0 25px;
+    transition: .4s all;
+    border-radius: 24px;
+}
+.copiar-btn:hover{
+    color: white;
+    cursor:pointer;
+    transform: scale(1.1);
+    background: #0A3871;
+
+}
+.texto-encriptado{
+    position: absolute;
+    font-family: 'Inter', sans-serif;
+    font-size: 20px;
+    width: 100%;
+    background-color: #f3f5fc;
+    border: #0A3871;
+    outline: none; 
+    bottom: 400px;
+    left: 5%;
+    padding: 20px;
+}
+    

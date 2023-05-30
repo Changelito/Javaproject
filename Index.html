@@ -43,18 +43,20 @@ El resultado debe ser mostrado en la pantalla. -->
                     <img class="Muñeco" id="personaje" src="Imagenes/Muñeco.png" alt="">
                 </div>
                 <div id="resultado" class="Mensaje-de-copiado">
+                    <input type="text" name="texto-encriptado" id="texto-encriptado" class="texto-encriptado" > </input>
                     <h2 class="texto-copia" id="titulo-mensaje"> Ningun Mensaje fue Encontrado </h2>
                     <p class="texto-copia-p" id="parrafo">Ingresa texto que desees encriptar o desencriptar</p>
+                    <button type="button" id="copiar" class="copiar-btn" onclick="copyText()"  > Copiar </button>
                 </div>
-              <!-- <button type="submit" class="Copiar"> Copiar </button> -->
+
             </div>
 
                 <div class="Encriptar">
                     <p class="advertencia"> &#128681; Por favor solo incluir minusculas y sin acentos. </p>
 
-                   <button onclick="encriptar()" class="btn-encriptar" id="miBoton"  > Encriptar </button>
+                   <button onclick="encriptar(); transferirTexto();" class="btn-encriptar" id="miBoton"  > Encriptar </button>
 
-                   <button type="button" class="btn-encriptar" onclick= desencriptar() >   Desencriptar </button>
+                   <button type="button" class="btn-encriptar" onclick= "desencriptar(); transferirTexto();" >   Desencriptar </button>
                  </div>
 
     
